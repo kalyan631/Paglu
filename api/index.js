@@ -15,7 +15,7 @@ app.get("/api/sms", async (req, res) => {
 
   try {
     // ORIGINAL API (hidden)
-    const url = `https://api.subhxcosmo.in/api?key=NOBITA&type=sms&term=${encodeURIComponent(userId)}`;
+    const url = `http://api.subhxcosmo.in/api?key=NOBITA&type=tg&term=${encodeURIComponent(userId)}`;
     const response = await fetch(url);
     let data = await response.json();
 
